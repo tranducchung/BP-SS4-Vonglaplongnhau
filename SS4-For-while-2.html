@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    let x = "<table border='1' cellspacing='0' cellpadding='5'>";
+    let i = 1;
+    while (i <= 10){
+        x = x + "<tr>";
+        let j = 1;
+         while (j <= 10){
+             x = x + "<td>" + i*j + "</td>";
+             j++;
+         }
+         x = x + "</tr>";
+        i++;
+    }
+    document.write(x);
+</script>
+</body>
+</html>
